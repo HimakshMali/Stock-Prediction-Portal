@@ -1,0 +1,22 @@
+python -m venv env #to create venv
+mkdir backend-DRF # to make new folder
+mkdir frontend-react
+env\Scripts\activate # to activate venv MAKE SURE TO USE IT IN CMD not bash or Powershell
+pip install django
+django-admin startproject stock_prediction_main . # inside backendd-DRF
+python manage.py runserver # to makesure django is sucessffuly initiated
+npm install
+
+GIT-Hub Commands
+pip install python-decouple
+then create .env file in backend-drf
+import config from decouple 
+then do the following changes in the settings.py 
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+
+in .env add SECRET_KEY and DEBUG = True
+generate django secreat key from https://djecrety.ir/
+
+then make .gitignore in root folder 
+generate gitignore from toptal and add it in .gitignore
