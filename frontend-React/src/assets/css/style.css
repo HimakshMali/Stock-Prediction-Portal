@@ -1,0 +1,303 @@
+/* Custom Header Background and Glassmorphism Effect */
+.custom-navbar {
+  background: linear-gradient(to bottom, rgba(248, 250, 252, 1) 0%, rgba(248, 250, 252, 0) 100%);
+  border-bottom: none;
+  padding: 1.5rem 0 2.5rem 0; /* Expanded padding for a smoother gradient area */
+  box-shadow: none;
+}
+
+/* Typography & Brand Style */
+.brand-logo {
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+  color: #1e293b !important; /* Soft, deep corporate slate blue */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.brand-logo:hover {
+  opacity: 0.9;
+}
+
+.brand-accent {
+  color: #006fee; /* Primary HeroUI signature blue */
+  margin-right: 2px;
+}
+
+/* Custom Buttons - Clean Corporate Aesthetic */
+
+/* Log In Button (Text/Ghost Variant) */
+.btn-login {
+  font-weight: 500;
+  color: #475569 !important; /* Soft muted gray-blue */
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px; /* Modern rounded corners similar to HeroUI */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-login:hover {
+  color: #1e293b !important;
+  background-color: #f1f5f9; /* Super soft background on hover */
+}
+
+/* Register Button (Solid Soft Blue Accent Variant) */
+.btn-register {
+  font-weight: 500;
+  color: #ffffff !important;
+  background-color: #006fee; /* HeroUI Solid Blue */
+  border: 1px solid #006fee;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px 0 rgba(0, 111, 238, 0.2); /* Soft blue glow */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-register:hover {
+  background-color: #005bc4; /* Slightly deeper blue for active hover state */
+  border-color: #005bc4;
+  transform: translateY(-1px); /* Subtly raises button */
+  box-shadow: 0 6px 20px 0 rgba(0, 111, 238, 0.3);
+}
+
+.btn-register:active {
+  transform: translateY(0);
+}
+
+/* Modern Card Layout Styling */
+.card-custom {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Hero / Header Unit modification */
+.dashboard-hero {
+  background: radial-gradient(circle at top left, #ffffff, #f1f5f9);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.dashboard-title {
+  color: #0f172a; /* Rich off-black slate */
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.dashboard-subtitle {
+  color: #475569;
+  max-width: 700px;
+}
+
+.section-title {
+  color: #1e293b;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Predictive Inputs & Buttons */
+.custom-input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  min-width: 260px;
+  transition: all 0.2s;
+}
+
+.custom-input:focus {
+  border-color: #006fee;
+  box-shadow: 0 0 0 3px rgba(0, 111, 238, 0.15);
+  outline: none;
+}
+
+.btn-predict {
+  background-color: #006fee;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-predict:hover {
+  background-color: #005bc4;
+  color: #ffffff;
+}
+
+/* Metrics Badges & Numbers */
+.metric-value {
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.badge {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-neutral {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.badge-info {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* Chart Canvas Mock Area */
+.chart-placeholder {
+  background-color: #f8fafc;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  height: 300px;
+}
+
+/* Mini Sidebar List Items */
+.prediction-item {
+  background-color: #f8fafc;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.prediction-item:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.trend-up {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.text-muted-xs {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Toggle Switcher overrides */
+.custom-toggle .btn {
+  border-color: #cbd5e1;
+  color: #64748b;
+}
+
+.custom-toggle .btn.active {
+  background-color: #64748b;
+  border-color: #64748b;
+  color: #ffffff;
+}
+
+/* Dashboard Footer Custom Design */
+.dashboard-footer {
+  background: linear-gradient(to top, rgba(248, 250, 252, 1) 0%, rgba(248, 250, 252, 0) 100%);
+  border-top: none;
+  color: #64748b; /* Soft gray-blue secondary text */
+  font-size: 0.875rem;
+}
+
+/* Footer Brand Typography */
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: #1e293b;
+}
+
+/* Micro-disclaimer for ML FinTech portals */
+.footer-disclaimer {
+  font-size: 0.75rem;
+  color: #94a3b8; /* Ultra-muted text color */
+  max-width: 420px;
+}
+
+/* Utility Links styling */
+.footer-links {
+  padding-left: 0;
+}
+
+.footer-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #006fee; /* Changes to HeroUI signature blue on hover */
+}
+
+.footer-copyright {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Ensure the html and body elements span the full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Turn the main container into a column flexbox */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes up at least the full height of the screen */
+  background-color: #f8fafc;
+}
+
+/* This grows to fill all empty space, naturally pinning the footer to the bottom */
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Keeps the footer sitting cleanly at the bottom */
+.dashboard-footer {
+  flex-shrink: 0;
+}
+
+/* Ensure the html and body elements span the full viewport height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Apply the network image background to the entire app wrapper */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  /* 1. The Network Image URL */
+  background-image: 
+    linear-gradient(rgba(248, 250, 252, 0.75), rgba(248, 250, 252, 0.85)),
+    url("https://images.pexels.com/photos/1183172/pexels-photo-1183172.jpeg?_gl=1*1amg5e9*_ga*ODE1NjM1MDA5LjE3ODI4ODI5OTQ.*_ga_8JE65Q40S6*czE3ODMwNzc2ODEkbzIkZzEkdDE3ODMwNzc5MjAkajE1JGwwJGgw");
+  
+  /* 2. Positioning rules to make it look smooth */
+  background-size: cover;          /* Scales the image perfectly to fill the screen */
+  background-position: center;     /* Centers the graphic elements */
+  background-repeat: no-repeat;    /* Prevents the image from tiling/repeating */
+  background-attachment: fixed;    /* Optional: Keeps the background still while scrolling */
+}
+
+/* This grows to fill all empty space, naturally pinning the footer to the bottom */
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Keeps the footer sitting cleanly at the bottom */
+.dashboard-footer {
+  flex-shrink: 0;
+}
