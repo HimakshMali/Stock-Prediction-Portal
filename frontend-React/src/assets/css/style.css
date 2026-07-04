@@ -301,3 +301,286 @@ html, body {
 .dashboard-footer {
   flex-shrink: 0;
 }
+
+
+/* ==========================================================================
+   Global Theme Adjustments & Reset
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    color: #333333;
+}
+
+/* ==========================================================================
+   Split-Screen Core Layout
+   ========================================================================== */
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Left Visual Wrapper */
+.auth-visual-panel {
+    flex: 1;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaf2f8;
+}
+
+.auth-visual-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Content Wrapper */
+.auth-form-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.auth-form-wrapper {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ==========================================================================
+   Typography & Branding Elements
+   ========================================================================== */
+.auth-brand {
+    margin-bottom: 40px;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b78c5;
+    letter-spacing: -0.5px;
+}
+
+.brand-sub {
+    font-weight: 300;
+    color: #5c9ce6;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Form Controls & Input Aesthetics
+   ========================================================================== */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    color: #333333;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #74b9ff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.15);
+}
+
+.form-input::placeholder {
+    color: #bbbbbb;
+}
+
+/* Password Box Adjustments */
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.password-toggle-btn:hover {
+    color: #2b78c5;
+}
+
+/* Error Typography styling */
+.input-error-border {
+    border-color: #ff7675 !important;
+}
+
+.error-text {
+    font-size: 12px;
+    color: #d63031;
+    margin-top: 2px;
+}
+
+/* ==========================================================================
+   Buttons & Status Badges
+   ========================================================================== */
+.action-block {
+    margin-top: 10px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #54a0ff;
+    border: none;
+    border-radius: 25px; /* Pill shape matching the reference image */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2e86de;
+}
+
+.btn-submit:disabled {
+    background-color: #b2bec3;
+    cursor: not-allowed;
+}
+
+.alert-success {
+    padding: 12px;
+    background-color: #e3faf2;
+    border: 1px solid #a3e9cf;
+    color: #0ca678;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Inline Spinner Logic */
+.spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Footer & Legal Segment Typography
+   ========================================================================== */
+.terms-text {
+    font-size: 11px;
+    color: #777777;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.terms-text a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.auth-footer-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.redirect-text {
+    font-size: 13px;
+    color: #666666;
+}
+
+.link-highlight {
+    color: #54a0ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-highlight:hover {
+    text-decoration: underline;
+}
+
+.back-navigation {
+    width: 100%;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-back:hover {
+    transform: translateX(-4px);
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 850px) {
+    .auth-visual-panel {
+        display: none; /* Drop the visual window on compact mobile devices */
+    }
+}     

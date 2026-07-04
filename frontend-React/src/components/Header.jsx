@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/css/style.css';
-
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
@@ -16,9 +16,9 @@ const Header = () => {
           <a href="#login" className="btn btn-login">
             Log In
           </a>
-          <a href="#register" className="btn btn-register">
+          <Link to="/register" className="btn btn-register">
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
