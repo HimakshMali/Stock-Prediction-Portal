@@ -321,11 +321,32 @@ body {
 /* ==========================================================================
    Split-Screen Core Layout
    ========================================================================== */
+/* ==========================================================================
+   Smooth Color Blending Transition
+   ========================================================================== */
 .auth-container {
     display: flex;
     min-height: 100vh;
     width: 100%;
-    background-color: #ffffff;
+    /* Creates a gentle horizontal transition blending the image's pastel tones into the form area */
+    background: linear-gradient(
+        90deg, 
+        rgba(234, 242, 248, 1) 0%,   /* Soft ice blue on the far left */
+        rgba(255, 235, 230, 0.6) 40%, /* Hint of warm peach in the mid-transition */
+        rgba(255, 255, 255, 0) 80%    /* Fades out completely as it approaches the image */
+    );
+    position: relative;
+}
+
+/* Updated Form Panel to make its background transparent so the blend shows through */
+.auth-form-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: transparent; /* Allows the container's gradient to show behind the form */
+    z-index: 2;
 }
 
 /* Left Visual Wrapper */
@@ -344,14 +365,7 @@ body {
 }
 
 /* Right Content Wrapper */
-.auth-form-panel {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #ffffff;
-}
+
 
 .auth-form-wrapper {
     width: 100%;
@@ -584,3 +598,30 @@ body {
         display: none; /* Drop the visual window on compact mobile devices */
     }
 }     
+
+/* ==========================================================================
+   Login Specific UI Refinements
+   ========================================================================== */
+
+/* Layout arrangement for label and inline helper links */
+.input-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password-link {
+    font-size: 12px;
+    color: #54a0ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Padding balance adjustments specific to the login card footer */
+.login-footer-adjust {
+    margin-top: 40px; 
+}

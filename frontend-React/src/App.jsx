@@ -5,8 +5,10 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Register from './components/Register'
+import Login from './components/Login'
 import './assets/css/style.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AuthProvider from './AuthProvider'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +21,7 @@ function App() {
       </main>
       <Footer />
     </div> */}
+    <AuthProvider>
 
 
 
@@ -39,9 +42,12 @@ function App() {
 
 
           <Route path='/register' element={<Register/>}/>
+          <Route path='/login' element={<Login/>}/>
         </Routes>
 
       </BrowserRouter>
+
+      </AuthProvider>
 
     </>
   )
