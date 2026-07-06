@@ -26,14 +26,16 @@ const Header = () => {
   
             <span><button className='btn btn-login'
             onClick={handleLogout}>Logout</button></span>
-          ): (
+          ): 
+          (
           <Link to="/login" className="btn btn-login">
-            login
+            Designed with ❤️ by  
+           <h2 className="brand-logo">Himaksh<span className="brand-sub">M.</span></h2>
           </Link>
           )}
-          <Link to="/register" className="btn btn-register">
+          {/* <Link to="/register" className="btn btn-register">
             Register
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

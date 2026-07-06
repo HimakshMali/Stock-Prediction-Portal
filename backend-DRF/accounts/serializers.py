@@ -1,6 +1,7 @@
 # from pygments import style
 from django.contrib.auth.models import User
 from rest_framework import serializers
+from .models import LeadsModel
 
 class UserSerializer(serializers.ModelSerializer):
     # write_only=True ensures the password can be received during registration 
@@ -38,3 +39,8 @@ class UserSerializer(serializers.ModelSerializer):
         # )
         
         return user
+
+class LeadsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LeadsModel
+        fields = '__all__'

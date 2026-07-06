@@ -9,6 +9,9 @@ import Login from './components/Login'
 import './assets/css/style.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AuthProvider from './AuthProvider'
+import Dashoard from './components/dashboard/Dashoard'
+import PrivateRoute from './components/PrivateRoute'
+import PublicRoute from './components/PublicRoute'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -41,8 +44,12 @@ function App() {
           } />
 
 
-          <Route path='/register' element={<Register/>}/>
+          {/* <Route path='/register' element={<Register/>}/> */}
+
+          <Route path='/register' element={<PublicRoute><Register/></PublicRoute>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/dashboard' element={<PrivateRoute><Dashoard/></PrivateRoute>}/>
+          {/* <Route path='/dashboard' element={<PrivateRoute><Dashoard/></PrivateRoute>}/> */}
         </Routes>
 
       </BrowserRouter>

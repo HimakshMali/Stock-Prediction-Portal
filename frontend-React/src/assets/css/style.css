@@ -625,3 +625,92 @@ body {
 .login-footer-adjust {
     margin-top: 40px; 
 }
+
+/* Dynamic Auth Banner Core Layout */
+.dynamic-auth-banner {
+  background: #ffffff;
+  border-left: 5px solid #006fee; /* Default premium branding strip */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banner-title {
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.banner-text {
+  font-size: 0.9rem;
+}
+
+/* Beautiful Rounded Decorative Icon Context Blocks */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.icon-primary {
+  background-color: #e0f2fe;
+  color: #006fee;
+}
+
+.icon-success {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* Action Buttons: Clear Branding Themes */
+.btn-action-primary {
+  background-color: #006fee;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 111, 238, 0.2);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-action-primary:hover {
+  background-color: #005bc4;
+  box-shadow: 0 6px 16px rgba(0, 111, 238, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-action-success {
+  background-color: #16a34a;
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-action-success:hover {
+  background-color: #15803d;
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Inline Muted Text Links */
+.btn-text-link {
+  font-size: 0.88rem;
+  color: #64748b !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.btn-text-link:hover {
+  color: #006fee !important;
+}

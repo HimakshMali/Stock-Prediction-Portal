@@ -119,7 +119,9 @@ const Login = () => {
             {/* Right Side: Modern Visual Art Panel */}
             <div className="auth-visual-panel">
                 <img 
-                src='https://images.pexels.com/photos/25626506/pexels-photo-25626506.jpeg'
+                src='https://images.pexels.com/photos/18069828/pexels-photo-18069828.png'
+                // src='https://images.pexels.com/photos/25626525/pexels-photo-25626525.jpeg'
+                // src='https://images.pexels.com/photos/25626506/pexels-photo-25626506.jpeg'
                     // src="https://images.pexels.com/photos/29579754/pexels-photo-29579754.jpeg" 
                     alt="Abstract Corporate Design" 
                     className="auth-visual-img"
